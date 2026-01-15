@@ -40,6 +40,12 @@ public class Program {
 			System.out.println(obj);
 		}
 		
+		System.out.println("\n=== TEST 4: seller Insert ===");
+		
+		Seller newSeller = new Seller(null, "Bruno", "bruno@gmail.com", new Date(), 4000.00, department);
+		sellerDao.insert(newSeller);
+		System.out.println("Inserted! New ID: " + newSeller.getId());
+		
 		
 	}
 
